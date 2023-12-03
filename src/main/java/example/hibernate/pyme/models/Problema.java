@@ -18,6 +18,7 @@ public class Problema implements Serializable {
     @Column(name="id")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int idProblema;
+    
     @ManyToOne
     @JoinColumn(name="IdTipoProblema")
     private TipoDeProblema tipoDeProblema;

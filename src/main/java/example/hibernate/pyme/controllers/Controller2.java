@@ -5,17 +5,18 @@ import javax.persistence.EntityTransaction;
 
 import example.hibernate.pyme.App;
 import example.hibernate.pyme.config.DBConfig;
-import example.hibernate.pyme.models.Empleado;
+import example.hibernate.pyme.models.Cliente;
+
 
 public class Controller2 {
 
-	public void otroMetodo(Empleado unEmpleado) {
+	public void otroMetodo(Cliente unCliente) {
 		
 		EntityManager em = DBConfig.getEntityManager();
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
-			unEmpleado.setNombre("Matias");
-			em.persist(unEmpleado);
+			unCliente.setRazonSocial("Matias");
+			em.persist(unCliente);
 		tx.commit();
 		
 	}

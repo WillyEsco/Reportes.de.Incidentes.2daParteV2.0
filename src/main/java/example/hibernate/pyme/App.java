@@ -72,9 +72,6 @@ public class App
             System.out.println("----No se encontró el servicio contratado----");
         }
 
-	
-
-
         //creo una especialidad
                 
         Especialidad unaEspecialidad = new Especialidad("especialista en redes", "mantiene y repara redes");

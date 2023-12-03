@@ -4,24 +4,26 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
 import example.hibernate.pyme.App;
-import example.hibernate.pyme.models.Direccion;
-import example.hibernate.pyme.models.Empleado;
-import example.hibernate.pyme.services.DireccionService;
-import example.hibernate.pyme.services.EmpleadoService;
+import example.hibernate.pyme.config.DBConfig;
+import example.hibernate.pyme.models.Cliente;
+import example.hibernate.pyme.models.Incidente;
+import example.hibernate.pyme.services.ClienteService;
+import example.hibernate.pyme.services.IncidenteService;
+
 
 public class Controller1 {
 
-	public void unMetodo(Empleado unEmpleado) {
+	public void unMetodo(Cliente unCliente) {
 		
-		EmpleadoService empleadoService = new EmpleadoService();
+		ClienteService clienteService = new ClienteService();
 		
-		unEmpleado.setNombre("Nahuel");
+		unCliente.setRazonSocial("Josécito");
 		
-		empleadoService.create(unEmpleado);
+		clienteService.create(unCliente);
 
-		DireccionService direccionService = new DireccionService();
+		IncidenteService incidenteService = new IncidenteService();
 		
-		direccionService.saveDireccion(new Direccion());
+		incidenteService.create(new Incidente());
 				
 	}
 	

@@ -31,6 +31,10 @@ public class Tecnico implements Serializable {
     @JoinColumn(name="especialidad_id", referencedColumnName="id")
     private List<Especialidad> especialidadServicio;
 
+    @ManyToMany
+    @JoinColumn(name="incidente_id", referencedColumnName="id")
+    private List<Incidente> incidente;
+
     public Tecnico( String nombre, String apellido, String medioComunicacion) {
         this.nombre = nombre;
         this.apellido = apellido;
