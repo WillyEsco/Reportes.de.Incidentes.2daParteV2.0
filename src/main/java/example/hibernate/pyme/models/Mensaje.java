@@ -35,7 +35,7 @@ public class Mensaje implements Serializable {
     private Boolean recebido;
     
     @OneToOne
-    @JoinColumn(name="mensaje_id", referencedColumnName="id")
+    @JoinColumn(name="tecnico_id", referencedColumnName="id")
     private Tecnico tecnico;
 
     public Mensaje(String titulo, String cuerpo, LocalDateTime horaEnvio, Boolean recebido, Tecnico tecnico) {
