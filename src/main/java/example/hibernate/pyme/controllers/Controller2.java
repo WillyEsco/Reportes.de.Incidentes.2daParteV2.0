@@ -15,7 +15,7 @@ public class Controller2 {
 		EntityManager em = DBConfig.getEntityManager();
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
-			unCliente.setRazonSocial("Matias");
+			unCliente.setRazonSocial("Josecito International INC");
 			em.persist(unCliente);
 		tx.commit();
 		
