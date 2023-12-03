@@ -10,7 +10,7 @@ import example.hibernate.pyme.config.DBConfig;
 
 public abstract class AbstractJpaDAO< T extends Serializable> {
 
-    private Class< T> clazz;
+    private Class< T > clazz;
 
     public final void setClazz(Class< T> clazzToSet) {
         this.clazz = clazzToSet;
