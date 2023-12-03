@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="148"
+   height="20"
+   role="img"
+   aria-label="OSSU: computer-science"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="AP4.0-UTN.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs8">
+    <rect
+       x="40.839729"
+       y="0"
+       width="101.99805"
+       height="17.990989"
+       id="rect1" />
+    <rect
+       x="43.768293"
+       y="5.6402439"
+       width="101.75"
+       height="23.689024"
+       id="rect9" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="6.268406"
+     inkscape:cx="65.806203"
+     inkscape:cy="35.016877"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="1525"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <title
+     id="title1">OSSU: computer-science</title>
+  <linearGradient
+     id="s"
+     x2="0"
+     y2="100%">
+    <stop
+       offset="0"
+       stop-color="#bbb"
+       stop-opacity=".1"
+       id="stop1" />
+    <stop
+       offset="1"
+       stop-opacity=".1"
+       id="stop2" />
+  </linearGradient>
+  <clipPath
+     id="r">
+    <rect
+       width="148"
+       height="20"
+       rx="3"
+       fill="#fff"
+       id="rect2" />
+  </clipPath>
+  <g
+     clip-path="url(#r)"
+     id="g5">
+    <rect
+       width="41"
+       height="20"
+       fill="#555"
+       id="rect3" />
+    <rect
+       x="41"
+       width="107"
+       height="20"
+       fill="#007ec6"
+       id="rect4" />
+    <rect
+       width="148"
+       height="20"
+       fill="url(#s)"
+       id="rect5" />
+  </g>
+  <g
+     fill="#ffffff"
+     text-anchor="middle"
+     font-family="Verdana, Geneva, 'DejaVu Sans', sans-serif"
+     text-rendering="geometricPrecision"
+     font-size="110px"
+     id="g8"
+     transform="translate(-1.5792683,-0.2256098)">
+    <text
+       aria-hidden="true"
+       x="215"
+       y="150"
+       fill="#010101"
+       fill-opacity="0.3"
+       transform="scale(0.1)"
+       textLength="310"
+       id="text5"
+       lengthAdjust="spacing"
+       style="display:none">OSSU</text>
+    <text
+       x="215"
+       y="140"
+       transform="scale(0.1)"
+       fill="#ffffff"
+       textLength="310"
+       id="text6"
+       lengthAdjust="spacing"
+       style="display:inline">AP4.0</text>
+    <text
+       aria-hidden="true"
+       x="935"
+       y="150"
+       fill="#010101"
+       fill-opacity="0.3"
+       transform="scale(0.1)"
+       textLength="970"
+       id="text7"
+       lengthAdjust="spacing"
+       style="display:none">UTN</text>
+    <text
+       x="935"
+       y="140"
+       transform="scale(0.1)"
+       fill="#ffffff"
+       textLength="970"
+       id="text8"
+       lengthAdjust="spacing"
+       style="display:inline" />
+  </g>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>OSSU: computer-science</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <text
+     xml:space="preserve"
+     id="text9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.73365px;font-family:'#44 Font Shadow';-inkscape-font-specification:'#44 Font Shadow';text-align:center;white-space:pre;shape-inside:url(#rect9);shape-padding:0.451219;display:inline;fill:#000000"
+     x="35.263981"
+     y="0"
+     transform="matrix(1.1477619,0,0,1,-12.216681,-4.0609756)" />
+  <text
+     xml:space="preserve"
+     id="text1"
+     style="font-size:4px;font-family:'2015 Cruiser';-inkscape-font-specification:'2015 Cruiser';text-align:center;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#fef8f8"
+     transform="matrix(1.0854164,0,0,1.6801898,-5.9889671,-6.2244359)"
+     x="0"
+     y="0"><tspan
+       x="91.838867"
+       y="4.4971449"
+       id="tspan2">
+</tspan><tspan
+       x="56.852539"
+       y="12.172632"
+       id="tspan5"><tspan
+         style="font-weight:900;font-size:8px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';text-align:justify"
+         id="tspan4">UTN - Argentina</tspan></tspan></text>
+</svg>
