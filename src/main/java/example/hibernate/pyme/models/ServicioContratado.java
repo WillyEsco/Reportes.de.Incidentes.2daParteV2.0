@@ -46,6 +46,9 @@ public class ServicioContratado implements Serializable{
         this.horasConsumidas = horasConsumidas;
         this.servicio = servicio;
     }
-
+    @Override
+    public String toString() {
+        return "ServicioContratado{" + "id=" + id + ", cliente=" + cliente + ", fechaInicio=" + fechaInicio + ", fechaVto=" + fechaVto + ", horasConsumidas=" + horasConsumidas + ", servicio=" + servicio + '}';
+    }
    
 }
