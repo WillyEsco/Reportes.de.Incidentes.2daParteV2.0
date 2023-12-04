@@ -1,5 +1,4 @@
 package example.hibernate.pyme.models;
-import java.beans.Transient;
 import java.io.Serializable;
 
 import javax.persistence.*;

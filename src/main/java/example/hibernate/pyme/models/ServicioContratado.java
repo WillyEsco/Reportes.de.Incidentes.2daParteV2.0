@@ -1,7 +1,6 @@
 package example.hibernate.pyme.models;
 import java.io.Serializable;
 
-import javax.management.ConstructorParameters;
 import javax.persistence.*;
 
 import lombok.Getter;

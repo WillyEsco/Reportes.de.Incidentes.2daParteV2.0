@@ -1,9 +1,8 @@
 package example.hibernate.pyme.services;
 
 import example.hibernate.pyme.DAO.ProblemaDAO;
-import example.hibernate.pyme.DAO.TipoDeProblemaDAO;
 import example.hibernate.pyme.models.Problema;
-import example.hibernate.pyme.models.TipoDeProblema;
+
 
 import java.util.List;
 
