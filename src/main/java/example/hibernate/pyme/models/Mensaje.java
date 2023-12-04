@@ -16,15 +16,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="mensaje")
-@Getter @Setter @NoArgsConstructor
+@Table(name = "MENSAJES")
+@Setter
+@Getter
+@NoArgsConstructor
 public class Mensaje implements Serializable {
-    
+
     @Id
-    @Column(name="id") 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int idMensaje;
+
+    @Column(name = "titulo", length = 255, nullable = false)
     private String titulo;
-    
+
     @Column(name="descripcion_mensaje",length=150,nullable=false)
     private String cuerpo;
             
@@ -33,9 +38,9 @@ public class Mensaje implements Serializable {
     
     @Column(name="recibido", length=10,nullable=false)
     private Boolean recebido;
-    
+
     @ManyToOne
-    @JoinColumn(name="tecnico_id", referencedColumnName="id")
+    @JoinColumn(name = "tecnico_id", nullable = false)
     private Tecnico tecnico;
 
     public Mensaje(String titulo, String cuerpo, LocalDateTime horaEnvio, Boolean recebido, Tecnico tecnico) {
@@ -51,6 +56,7 @@ public class Mensaje implements Serializable {
     public String toString() {
         return "Mensaje{" + "titulo=" + titulo + ", cuerpo=" + cuerpo + ", horaEnvio=" + horaEnvio + ", recebido=" + recebido + ", tecnico=" + tecnico + '}';
     }
-    
-    
 }
+
+
+

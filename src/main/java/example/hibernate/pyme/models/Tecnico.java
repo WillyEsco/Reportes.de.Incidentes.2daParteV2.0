@@ -9,41 +9,52 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name="TECNICOS")
-@Setter @Getter @NoArgsConstructor
+@Table(name = "TECNICOS")
+@Setter
+@Getter
+@NoArgsConstructor
 public class Tecnico implements Serializable {
 
     @Id
-    @Column(name="id")
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int idTecnico;
-    
-    @Column(name="nombre",length=50,nullable=false)
+
+    @Column(name = "nombre", length = 50, nullable = false)
     private String nombre;
-    
-    @Column(name="apellido",length=50,nullable=false)
+
+    @Column(name = "apellido", length = 50, nullable = false)
     private String apellido;
-    
-    @Column(name="medio_comunicacion",length=50,nullable=false)
+
+    @Column(name = "medio_comunicacion", length = 50, nullable = false)
     private String medioComunicacion;
-    
+
     @ManyToMany
-    @JoinColumn(name="especialidad_id", referencedColumnName="id")
+    @JoinTable(
+        name = "tecnico_especialidad",
+        joinColumns = @JoinColumn(name = "tecnico_id"),
+        inverseJoinColumns = @JoinColumn(name = "especialidad_id")
+    )
     private List<Especialidad> especialidadServicio;
 
     @ManyToMany
-    @JoinColumn(name="incidente_id", referencedColumnName="id")
+    @JoinTable(
+        name = "tecnico_incidente",
+        joinColumns = @JoinColumn(name = "tecnico_id"),
+        inverseJoinColumns = @JoinColumn(name = "incidente_id")
+    )
     private List<Incidente> incidente;
 
-    @OneToMany (mappedBy = "tecnico")
+    @OneToMany(mappedBy = "tecnico", cascade = CascadeType.ALL)
     private List<Mensaje> mensaje;
 
     @ManyToMany
-    @JoinColumn(name="servicio_id", referencedColumnName="id")
+    @JoinTable(
+        name = "tecnico_servicio",
+        joinColumns = @JoinColumn(name = "tecnico_id"),
+        inverseJoinColumns = @JoinColumn(name = "servicio_id")
+    )
     private List<Servicio> servicio;
-
-
-
 
     public Tecnico( String nombre, String apellido, String medioComunicacion) {
         this.nombre = nombre;
@@ -52,12 +63,7 @@ public class Tecnico implements Serializable {
         //this.especialidadServicio = especialidadServicio;
     }
 
-    public void determinarMedioComunicacion(int idTecnico){
-
-    }
-    public void sendNotificacion(String medioComunicacion, String mensaje){
-
-    }
+    // Otros métodos y constructores
 
     @Override
     public String toString() {
@@ -69,3 +75,5 @@ public class Tecnico implements Serializable {
                 '}';
     }
 }
+
+
