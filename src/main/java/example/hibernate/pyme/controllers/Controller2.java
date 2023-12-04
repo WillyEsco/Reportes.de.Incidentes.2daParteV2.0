@@ -3,7 +3,6 @@ package example.hibernate.pyme.controllers;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
-import example.hibernate.pyme.App;
 import example.hibernate.pyme.config.DBConfig;
 import example.hibernate.pyme.models.Cliente;
 
