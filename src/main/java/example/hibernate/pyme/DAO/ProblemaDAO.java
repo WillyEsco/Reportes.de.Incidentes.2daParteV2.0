@@ -1,6 +1,5 @@
 package example.hibernate.pyme.DAO;
 
-import example.hibernate.pyme.models.Cliente;
 import example.hibernate.pyme.models.Problema;
 
 public class ProblemaDAO extends AbstractJpaDAO<Problema>{
