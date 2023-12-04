@@ -102,7 +102,7 @@ public class App
             System.out.println("----No se pudo crear el técnico----");
         }
         try{
-            Tecnico otroTecnico = tecnicoService.findOne(11);
+            Tecnico otroTecnico = tecnicoService.findOne(1);
             System.out.println("********************************************************************************");
             System.out.println("     " + otroTecnico.toString());
             System.out.println("********************************************************************************");

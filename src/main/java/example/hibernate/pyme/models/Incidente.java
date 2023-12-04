@@ -14,7 +14,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name="incidente")
+@Table(name="incidentes")
 @Getter @Setter @NoArgsConstructor
 public class Incidente implements Serializable {
 

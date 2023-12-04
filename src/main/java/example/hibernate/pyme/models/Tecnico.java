@@ -35,6 +35,16 @@ public class Tecnico implements Serializable {
     @JoinColumn(name="incidente_id", referencedColumnName="id")
     private List<Incidente> incidente;
 
+    @OneToMany (mappedBy = "tecnico")
+    private List<Mensaje> mensaje;
+
+    @ManyToMany
+    @JoinColumn(name="servicio_id", referencedColumnName="id")
+    private List<Servicio> servicio;
+
+
+
+
     public Tecnico( String nombre, String apellido, String medioComunicacion) {
         this.nombre = nombre;
         this.apellido = apellido;

@@ -18,7 +18,7 @@ public class Servicio implements Serializable {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int idServicio;
+    private int Id;
 
     @Column(name="nombre",length=80,nullable=false)
     private String nombre;
@@ -33,7 +33,7 @@ public class Servicio implements Serializable {
 
     @Override
     public String toString() {
-        return "Servicio{" + "idServicio=" + idServicio + ", nombre=" + nombre + ", descripcion=" + descripcion + '}';
+        return "Servicio{" + "idServicio=" + Id + ", nombre=" + nombre + ", descripcion=" + descripcion + '}';
     }
     
     
