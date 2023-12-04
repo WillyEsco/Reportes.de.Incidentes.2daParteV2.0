@@ -22,8 +22,6 @@ public class ServicioContratado implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 
- 
-
     @ManyToOne(fetch=FetchType.EAGER)    
 	@JoinColumn(name="cliente_id", referencedColumnName="id")
     private Cliente cliente;

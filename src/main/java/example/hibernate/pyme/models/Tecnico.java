@@ -63,8 +63,6 @@ public class Tecnico implements Serializable {
         //this.especialidadServicio = especialidadServicio;
     }
 
-    // Otros métodos y constructores
-
     @Override
     public String toString() {
         return "Tecnico{" +
