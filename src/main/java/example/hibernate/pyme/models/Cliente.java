@@ -74,7 +74,10 @@ public class Cliente implements Serializable {
 
     @Override
     public String toString() {
-        return "Cliente [id=" + id + ", razonSocial=" + razonSocial + ", cuit=" + cuit + ", eMail=" + Email + "]";
+        return "\nCliente\n\n id = " + id 
+        + ",\n Razon Social = " + razonSocial 
+        + ",\n CUIT =" + cuit 
+        + ",\n eMail = " + Email +"\n";
     }
 
     
