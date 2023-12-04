@@ -74,10 +74,13 @@ public class Cliente implements Serializable {
 
     @Override
     public String toString() {
-        return "\nCliente\n\n id = " + id 
-        + ",\n Razon Social = " + razonSocial 
-        + ",\n CUIT =" + cuit 
-        + ",\n eMail = " + Email +"\n";
+        return 
+          "\n                       Cliente"
+        + "\n                       -------" 
+        +"\n                       id = " + id 
+        + ",\n                       Razon Social = " + razonSocial 
+        + ",\n                       CUIT = " + cuit 
+        + ",\n                       eMail = " + Email +"\n";
     }
 
     
