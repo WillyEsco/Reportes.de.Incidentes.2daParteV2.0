@@ -4,13 +4,23 @@ import java.time.LocalDateTime;
 
 import example.hibernate.pyme.models.*;
 import example.hibernate.pyme.services.*;
+import example.hibernate.pyme.controllers.*;
 import java.util.Date;
+import java.util.Scanner;
+ 
 
 public class App 
 {
 	public static void main(String[] args) {
+        // limpiar consola
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+        System.out.println("********************************************************************************");
+        System.out.println("         CARGA INICIAL DEL LOTE DE DATOS DE LAS TABLAS DEL SISTEMA");
+        System.out.println("********************************************************************************"); 
+        System.out.println("            ...el proceso se iniciara en breves instantes... ");
 
-		// creo un servicio
+        // creo un servicio
 		Servicio unServicio = new Servicio("Internet 5G","Descripcion de 5G");
 		ServicioService servicioService = new ServicioService();
 		servicioService.create(unServicio);
@@ -24,7 +34,6 @@ public class App
 	
 		Cliente unCliente = new Cliente("Costco", 123456789, "info@costco.com");
 		ClienteService clienteService = new ClienteService();
-
         
         try{
 		clienteService.create(unCliente);
@@ -155,7 +164,15 @@ public class App
                 System.out.println("----No se pudo crear el mensaje----");
                 }
 
-    
+        System.out.println("********************************************************************************");
+        System.out.println("                 FIN DE CARGA INICIAL DE DATOS DEL SISTEMA");
+        System.out.println("********************************************************************************");
+               
+        System.out.println(" \n\n\n\n\n\n");
+        
+        IncidenteController incidenteController = new IncidenteController();
+        incidenteController.cargarIncidente();
+
         }
 	
 }

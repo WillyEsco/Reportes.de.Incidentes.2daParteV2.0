@@ -11,6 +11,10 @@ import lombok.Setter;
 import java.sql.Time;
 import java.util.Date;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 
 @Entity
 @Table(name="incidentes")
@@ -22,15 +26,15 @@ public class Incidente implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
     private int incidenteID;
 
-    @Column(name="fechaCreacion",nullable=false)
-    private Date fechaCreacion;
+    @Column(name="fechaCreacion")
+    private LocalDateTime fechaCreacion;
 
     @OneToOne
     @JoinColumn(name="tecnico_id", referencedColumnName="id")
     private Tecnico tecnico;
 
-    @Column(name="fechaAsignacion",nullable=false)
-    private Date fechaAsignacion;
+    @Column(name="fechaAsignacion")
+    private LocalDateTime fechaAsignacion;
 
     @Column(name="consideracion",length=250,nullable=false)
     private String consideracion;
@@ -52,14 +56,14 @@ public class Incidente implements Serializable {
     @Column(name="complejidadAlta",nullable=false)
     private boolean complejidadAlta;
 
-    @Column(name="tiempoUtilizadoTecnico",nullable=false)
-    private double tiempoUtilizadoTecnico;
+    @Column(name="tiempoUtilizadoTecnico")
+    private LocalTime tiempoUtilizadoTecnico;
 
-    @Column(name="tiempoEstimadoSistema",nullable=false)
-    private double tiempoEstimadoSistema;
+    @Column(name="tiempoEstimadoSistema")
+    private LocalTime tiempoEstimadoSistema;
 
-    @Column(name="tiempoExtra",nullable=false)
-    private Time tiempoExtra;
+    @Column(name="tiempoExtra")
+    private LocalTime tiempoExtra;
 
     @ManyToOne //un cliente puede tener muchos incidentes
     @JoinColumn(name="cliente_id", referencedColumnName="id")
@@ -67,7 +71,7 @@ public class Incidente implements Serializable {
 
     public Incidente(Date fechaCreacion, Tecnico tecnico, Date fechaAsignacion, String consideracion,
                      String estado, String descripcionCliente, Problema problema, Servicio servicio, boolean complejidadAlta,
-                     double tiempoUtilizadoTecnico, double tiempoEstimadoSistema, Time tiempoExtra, Cliente cliente) {
+                     LocalTime tiempoUtilizadoTecnico, LocalTime tiempoEstimadoSistema, LocalTime tiempoExtra, Cliente cliente) {
     
         this.fechaCreacion = fechaCreacion;
         this.tecnico = tecnico;
