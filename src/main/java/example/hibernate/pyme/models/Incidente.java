@@ -8,12 +8,11 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import java.sql.Time;
-import java.util.Date;
+ 
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+ 
 
 
 @Entity
@@ -53,7 +52,7 @@ public class Incidente implements Serializable {
     @JoinColumn(name="servicio_id", referencedColumnName="id")
     private Servicio servicio;
 
-    @Column(name="complejidadAlta",nullable=false)
+    @Column(name="complejidadAlta")
     private boolean complejidadAlta;
 
     @Column(name="tiempoUtilizadoTecnico")

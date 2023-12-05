@@ -34,7 +34,7 @@ public class IncidenteController {
             // input por consola del dato , en este caso la respuesta        
             String unaRespuesta = scanner.nextLine();
             // si la respuesta es S, se continua con el ciclo
-            if (unaRespuesta.equals("S")) {
+            if (unaRespuesta.toUpperCase().equals("S")) {
                 continuar = true;
             } else {
                 // si la respuesta es N, se termina el ciclo
@@ -104,6 +104,7 @@ public class IncidenteController {
  
         // ingresar la consideracion
         System.out.println("Ingrese la CONSIDERACION:");
+        scanner = new Scanner(System.in);
         String unaConsideracion = scanner.nextLine();
         myIncidente.setConsideracion(unaConsideracion);
         System.out.println("********************************************************************************");
@@ -113,8 +114,9 @@ public class IncidenteController {
    
         // ingresar la complejidad
         System.out.println("Ingrese la COMPLEJIDAD, Si es Alta indique 'S' ");
+        scanner = new Scanner(System.in);
         String unaComplejidad = scanner.nextLine();
-        if (unaComplejidad.equals("S")) {
+        if (unaComplejidad.toUpperCase().equals("S")) {
             myIncidente.setComplejidadAlta(true);
             complejidad = true;
         } else {
@@ -124,7 +126,7 @@ public class IncidenteController {
         System.out.println("********************************************************************************");
         System.out.println(" INCIDENTE de complejidad: " + complejidad + " según calificacion del técnico");
         System.out.println("********************************************************************************\n\n\n");
-        myIncidente.setComplejidadAlta(Boolean.parseBoolean(unaComplejidad));
+        myIncidente.setComplejidadAlta(complejidad);
         
         // ingresar el estado
         System.out.println("Ingrese el estado (INICIADO, ASIGNADO, PENDIENTE, CURSADO, , DERIVADO, RESUELTO, CERRADO))");
