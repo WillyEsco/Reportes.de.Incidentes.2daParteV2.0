@@ -69,7 +69,7 @@ public class Incidente implements Serializable {
     @JoinColumn(name="cliente_id", referencedColumnName="id")
     private Cliente cliente;
 
-    public Incidente(Date fechaCreacion, Tecnico tecnico, Date fechaAsignacion, String consideracion,
+    public Incidente(LocalDateTime fechaCreacion, Tecnico tecnico, LocalDateTime fechaAsignacion, String consideracion,
                      String estado, String descripcionCliente, Problema problema, Servicio servicio, boolean complejidadAlta,
                      LocalTime tiempoUtilizadoTecnico, LocalTime tiempoEstimadoSistema, LocalTime tiempoExtra, Cliente cliente) {
     
