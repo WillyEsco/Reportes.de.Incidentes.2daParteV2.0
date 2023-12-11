@@ -39,6 +39,7 @@ para su persististencia en una Base de Datos Relacional.<br>
 - [Sumario](#summary)
 - [UML](#uml)
 - [DER](#der)
+- [VIDEO](#video)
  
 
 <br> __JAVA MAVEN Project__
@@ -75,3 +76,13 @@ para su persististencia en una Base de Datos Relacional.<br>
 <p align="center">
   <img  src="./assets/DER.jpg" width="80%" height="80%"  />
 </p>
+
+# video
+## Presentación y Demo del Sistema
+[![Presentación y Demo del Sistema](./assets/miniatura.png)](https://youtu.be/9ziw7C5ELHI?feature=shared)
+
+
+
+
+
+

@@ -8,9 +8,10 @@ public class App
 {
 	public static void main(String[] args) {
         // limpiar consola
+
         System.out.print("\033[H\033[2J");
         System.out.flush();
-
+       
         CargaInicialController cargaInicialController = new CargaInicialController();
         cargaInicialController.cargarDatosIniciales();
 
